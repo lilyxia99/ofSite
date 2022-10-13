@@ -765,7 +765,15 @@ _advanced: False_
 
 _inlined_description: _
 
+Create a input field to enter certain type of variable from the gui. 
+~~~~{.h}
+ofxPanel gui;
+ofxInputField<unsigned char> deviceNum;
+~~~~
 
+~~~~{.cpp}
+gui.add(deviceNum.setup("Device Number",0));
+~~~~
 
 
 
@@ -800,9 +808,6 @@ _advanced: False_
 -->
 
 _inlined_description: _
-
-
-
 
 
 
